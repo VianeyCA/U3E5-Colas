@@ -11,7 +11,7 @@ public class ColasU3 {
          int opcion;
          String palabra;
          
-         ColaDinamica pila=new ColaDinamica();
+         ColaDinamica cola=new ColaDinamica();
          Scanner leer=new Scanner (System.in);
          while(continuar){
              System.out.println("");
@@ -27,15 +27,15 @@ public class ColasU3 {
                      System.out.println("");
                      System.out.println("Palabra a insertar");
                      palabra=leer.next();
-                     pila.Empujar(" "+palabra);
+                     cola.Empujar(" "+palabra);
                      
                      break;
                  case 2:
-                     pila.SacarPila();
+                     cola.SacarCola();
                      System.out.println("");
                      break;
                  case 3:
-                     pila.mostrarPila();
+                     cola.mostrarCola();
                      System.out.println("");
                      break;
                  case 4:
